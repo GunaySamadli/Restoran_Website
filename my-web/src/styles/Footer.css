@@ -1,0 +1,138 @@
+.footer {
+    width: 100%;
+    height: 100%;
+    background-color: #0F172B !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10px;
+  }
+
+  .footer-up{
+    width: 100%;
+    padding: 50px 0;
+  }
+  .footer-up h4{
+    color: #FEA116 ;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 400 ;
+    margin-bottom: 1.5rem ;
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5rem;
+    position: relative;
+  }
+
+  .footer-up h4::after{
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 2px;
+    top: 50%;
+    right: 44%;
+    margin-top: -1px;
+    background: #FEA116;
+  }
+
+  .footer-up ul{
+    padding-left: 5px;
+  }
+  .footer-up ul li {
+    list-style: none;
+    padding: 5px 0;
+    color: #fff;
+    
+  }
+
+  .footer-up ul li a{
+    color: #fff;
+    text-decoration: none;
+  }
+  .footer-up h5{
+    color: #fff;
+  }
+
+  .footer-up ul li i{
+    
+      padding-right: 20px;
+  }
+  
+  .socialMedia i{
+    color: white;
+    margin: 20px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .socialMedia a:hover i{
+    color: #cb8112;
+  }
+
+  .socialMedia{
+    display: flex;
+  }
+  .socialMedia a{
+    text-decoration: none;
+    margin-right: 10px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: var(--light);
+    border: 1px solid #FFFFFF;
+    border-radius: 35px;
+    transition: .3s;
+  }
+
+  .socialMedia a:hover{
+    background-color: #F1F8FF;
+    
+  }
+  
+  .footer p {
+    color: white;
+  }
+
+  .form-sign{
+    position: relative;
+    outline: none;
+    border: none;
+  }
+
+  .form-sign input{
+    padding: 15px 0;
+  }
+
+  .sign{
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    background-color: #FEA116 !important;
+    outline: none;
+    border: none;
+  }
+
+  .footer-down{
+    border-top: 1px solid rgba(256, 256, 256, .1);
+    width: 100%;
+  }
+
+  .footer-down{
+    text-align: center;
+    padding: 20px 0;
+  }
+  @media only screen and (max-width: 1028px) {
+    .footer-item{
+      padding-bottom: 2rem;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .footer-up h4::after{
+      right:  68%;
+    }
+  }
+
+ 

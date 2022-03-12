@@ -1,0 +1,112 @@
+.navbar {
+    width: 100%;
+    height: max-content;
+    background-color: #0F172B !important;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: baseline !important;
+  }
+  .book-table{
+    background-color: #FEA116 !important;
+    border: #FEA116 !important;
+  }
+  .navbar .leftSide {
+    height: 100%;
+    display: flex;
+    padding-left: 50px;
+    padding-top: 8px;
+  }
+  
+  .navbar .leftSide .navbar-brand {
+    color: #FEA116 !important;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 1.2;
+  }
+
+  .navbar a:hover {
+    color: #FEA116 !important;
+}
+  
+  .navbar .rightSide {
+    flex: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .rightSide h1{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    outline: none;
+    transition: .5s;
+  }
+
+  .rightSide h1:hover{
+    color: #FEA116 !important;
+  }
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+  }
+  
+  .navbar  button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .navbar  i {
+    font-size: 40px;
+  }
+
+  @media only screen and (max-width: 900px) {
+    
+    .navbar .leftSide {
+      padding-left: 50px;
+    }
+
+    .book-table{
+      margin: 1rem 0 0 0 !important;
+    }
+  }
+  
+  @media only screen and (max-width: 992px) {
+    .navbar .rightSide  {
+      display: none;
+      
+    }
+    .navbar-brand{
+      display: none;
+    }
+
+    .navbar .rightSide.active {
+      display: block ;
+    }
+  
+    .navbar .rightSide h1 {
+      justify-content: flex-end;
+      padding-right: 50px;
+    }
+    .navbar  button {
+      display: inherit;
+      margin-right:20px;
+      margin-top: 11px;
+    }
+   
+  }
+  
+
+
+  @media only screen and (max-width: 1012px) {
+    .navbar  .rightSide h1 {
+      font-size: 13px;
+    }
+  
+  }
